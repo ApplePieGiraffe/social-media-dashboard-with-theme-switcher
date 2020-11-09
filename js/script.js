@@ -16,7 +16,7 @@ function switchThemesBody() {
 
 function switchThemesCards() {
     cards.forEach((card, index) => {
-        card.style.transition = `all .8s ease ${index / 7}s`;
+        card.style.transition = `all .5s ease ${index / 12}s`;
         if (card.classList.contains('card-dark-theme')) {
             card.classList.replace('card-dark-theme', 'card-light-theme');
         } else {

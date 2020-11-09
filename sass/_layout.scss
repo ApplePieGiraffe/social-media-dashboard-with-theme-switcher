@@ -2,13 +2,10 @@ body {
     position: relative;
     min-height: 100vh;
     padding: 0 4rem;
+    padding-bottom: 8rem;
     background-color: var(--color-bg);
     font-family: 'Inter', sans-serif;
-    transition: all .5s;
-
-    @media only screen and (min-width: 800px) {
-        padding: 0 4rem;
-    }
+    transition: all .8s;
 
     &::before {
         content: '';
@@ -20,7 +17,7 @@ body {
         border-bottom-left-radius: 2.5rem;
         border-bottom-right-radius: 2.5rem;
         background-color: var(--color-top-bg);
-        transition: all .5s;
+        transition: all .8s;
     }
 }
 
@@ -31,14 +28,24 @@ body {
     margin: 0 auto;
 }
 
+// ========
+// OVERVIEW 
+// ========
+
 .overview {
+    margin-bottom: 6rem;
+
+    @media only screen and (min-width: 1000px) {
+        margin-bottom: 2rem;
+    }
+
     &__top {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 4.5rem 0;
 
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: 600px) {
             flex-direction: row;
             margin-bottom: 1rem;
         }
@@ -48,9 +55,9 @@ body {
         width: 100%;
         margin-bottom: 2rem;
         border-bottom: 1px solid var(--color-text-2);
-        padding-bottom: 2rem;
+        padding-bottom: 3rem;
 
-        @media only screen and (min-width: 800px) {
+        @media only screen and (min-width: 600px) {
             width: auto;
             margin-right: auto;
             margin-bottom: 0;
@@ -62,7 +69,11 @@ body {
     &__heading {
         margin-bottom: .5rem;
         color: var(--color-text-1);
-        font-size: 3.5rem;
+        font-size: 3rem;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 3.5rem;
+        }
     }
 
     &__subheading {
@@ -72,7 +83,52 @@ body {
 
     &__bottom {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, min-content);
+        grid-gap: 3.75rem;
+
+        @media only screen and (min-width: 600px) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, min-content);
+        }
+
+        @media only screen and (min-width: 1000px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+// =======
+// DETAILS 
+// =======
+
+.details {
+    &__heading {
+        margin-bottom: 3rem;
+        color: var(--color-text-1);
+        font-size: 3rem;
+    }
+
+    &__bottom {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
         grid-column-gap: 3.75rem;
+        grid-row-gap: 3.25rem;
+    }
+}
+
+// ATTRIBUTION
+
+.attribution {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--color-text-2);
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: var(--color-text-1);
     }
 }
