@@ -25,10 +25,17 @@ function switchThemesCards() {
     });
 }
 
+function resetCardsTransition() {
+    cards.forEach((card, index) => {
+        card.style.transition = `all .3s`;
+    });
+}
+
 function toggleThemes() {
     toggleSwitch();
     switchThemesBody();
     switchThemesCards();
+    setTimeout(resetCardsTransition, 1150);
 }
 
 toggleSwitchBtn.addEventListener('click', toggleThemes);
