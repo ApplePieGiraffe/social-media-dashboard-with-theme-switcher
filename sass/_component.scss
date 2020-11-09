@@ -65,7 +65,12 @@
     }
 }
 
+// =====
+// CARDS
+// =====
+
 .card {
+    transition: all .3s;
     background-color: var(--color-card-bg);
 
     &:hover {
@@ -106,7 +111,7 @@
             height: auto;
         }
 
-        p {
+        h4 {
             color: var(--color-text-2);
             font-size: 1.5rem;
             font-weight: 700;

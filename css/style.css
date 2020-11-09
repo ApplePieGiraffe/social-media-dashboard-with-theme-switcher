@@ -112,6 +112,8 @@ html {
 }
 
 .card {
+  -webkit-transition: all .3s;
+  transition: all .3s;
   background-color: var(--color-card-bg);
 }
 
@@ -161,7 +163,7 @@ html {
   height: auto;
 }
 
-.overview-card__title-wrapper p {
+.overview-card__title-wrapper h4 {
   color: var(--color-text-2);
   font-size: 1.5rem;
   font-weight: 700;
