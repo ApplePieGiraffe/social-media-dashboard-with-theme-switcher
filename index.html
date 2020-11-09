@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Frontend Mentor | Social Media Dashboard With Theme Switcher</title>
+    <script defer src="./js/script.js"></script>
+</head>
+<body class="body-dark-theme">
+    <div class="content-wrapper">
+        <section class="overview">
+            <div class="overview__top">
+                <div class="overview__headings-wrapper">
+                    <h1 class="overview__heading">Social Media Dashboard</h1>
+                    <h3 class="overview__subheading">Total Followers: 23,004</h3>
+                </div>
+                <div class="toggle-switch__wrapper">
+                    <label class="toggle-switch__label" for="toggle-switch">Dark Mode</label>
+                    <button class="toggle-switch__btn" id="toggle-switch">
+                        <span class="toggle-switch__circle"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="overview__bottom">
+                <article class="overview-card overview-card--facebook card card-dark-theme">
+                    <div class="overview-card__title-wrapper">
+                        <img src="./img/icon-facebook.svg" alt="facebook icon">
+                        <p>@nathanf</p>
+                    </div>
+                    <p class="overview-card__heading">1987</p>
+                    <p class="overview-card__subheading">Followers</p>
+                    <p class="overview-card__growth overview-card__growth--positive">12 Today</p>
+                </article>
+
+                <article class="overview-card overview-card--twitter card card-dark-theme">
+                    <div class="overview-card__title-wrapper">
+                        <img src="./img/icon-twitter.svg" alt="twitter icon">
+                        <p>@nathanf</p>
+                    </div>
+                    <p class="overview-card__heading">1044</p>
+                    <p class="overview-card__subheading">Followers</p>
+                    <p class="overview-card__growth overview-card__growth--positive">99 Today</p>
+                </article>
+
+                <article class="overview-card overview-card--instagram card card-dark-theme">
+                    <div class="overview-card__title-wrapper">
+                        <img src="./img/icon-instagram.svg" alt="instagram icon">
+                        <p>@realnathanf</p>
+                    </div>
+                    <p class="overview-card__heading">11k</p>
+                    <p class="overview-card__subheading">Followers</p>
+                    <p class="overview-card__growth overview-card__growth--positive">1099 Today</p>
+                </article>
+
+                <article class="overview-card overview-card--youtube card card-dark-theme">
+                    <div class="overview-card__title-wrapper">
+                        <img src="./img/icon-youtube.svg" alt="youtube icon">
+                        <p>Nathan F.</p>
+                    </div>
+                    <p class="overview-card__heading">8239</p>
+                    <p class="overview-card__subheading">Subscribers</p>
+                    <p class="overview-card__growth overview-card__growth--negative">144 Today</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="details">
+            <div class="details__top">
+                <h2 class="details__heading">Overview - Today</h2>
+            </div>
+            <div class="details__bottom">
+                <article class="details-card">
+                    <p class="details-card__title">Page Views</p>
+                    <img src="./img/icon-facebook.svg" alt="facebook icon" class="details-card__icon">
+                    <p class="details-card__number">87</p>
+                    <p class="details-card__growth details-card__growth--positive">3%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Likes</p>
+                    <img src="./img/icon-facebook.svg" alt="facebook icon" class="details-card__icon">
+                    <p class="details-card__number">52</p>
+                    <p class="details-card__growth details-card__growth--negative">2%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Likes</p>
+                    <img src="./img/icon-instagram.svg" alt="instagram icon" class="details-card__icon">
+                    <p class="details-card__number">5462</p>
+                    <p class="details-card__growth details-card__growth--positive">2257%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Profile Views</p>
+                    <img src="./img/icon-instagram.svg" alt="instagram icon" class="details-card__icon">
+                    <p class="details-card__number">52k</p>
+                    <p class="details-card__growth details-card__growth--positive">1375%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Retweets</p>
+                    <img src="./img/icon-twitter.svg" alt="twitter icon" class="details-card__icon">
+                    <p class="details-card__number">117</p>
+                    <p class="details-card__growth details-card__growth--positive">303%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Likes</p>
+                    <img src="./img/icon-twitter.svg" alt="twitter icon" class="details-card__icon">
+                    <p class="details-card__number">507</p>
+                    <p class="details-card__growth details-card__growth--positive">553%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Likes</p>
+                    <img src="./img/icon-youtube.svg" alt="youtube icon" class="details-card__icon">
+                    <p class="details-card__number">107</p>
+                    <p class="details-card__growth details-card__growth--negative">19%</p>
+                </article>
+
+                <article class="details-card">
+                    <p class="details-card__title">Total Views</p>
+                    <img src="./img/icon-youtube.svg" alt="youtube icon" class="details-card__icon">
+                    <p class="details-card__number">1407</p>
+                    <p class="details-card__growth details-card__growth--negative">12%</p>
+                </article>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

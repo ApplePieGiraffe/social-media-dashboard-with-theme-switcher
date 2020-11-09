@@ -1,0 +1,29 @@
+.body-dark-theme {
+    --color-bg: var(--color-very-dark-blue-1);
+    --color-top-bg: var(--color-very-dark-blue-2);
+    --color-text-2: var(--color-desaturated-blue);
+    --color-text-1: var(--color-white);
+    --color-toggle-1: hsl(210, 78%, 56%);
+    --color-toggle-2: hsl(146, 68%, 55%);
+}
+
+.body-light-theme {
+    --color-bg: var(--color-white);
+    --color-top-bg: var(--color-very-pale-blue);
+    --color-text-1: var(--color-dark-greyish-blue);
+    --color-text-2: var(--color-very-dark-blue);
+    --color-toggle-1: hsl(230, 22%, 74%);
+    --color-toggle-2: hsl(230, 22%, 74%);
+}
+
+.card-dark-theme {
+    --color-card-bg: var(--color-dark-desaturated-blue);
+    --color-text-2: var(--color-desaturated-blue);
+    --color-text-1: var(--color-white);
+}
+
+.card-light-theme {
+    --color-card-bg: var(--color-light-greyish-blue);
+    --color-text-1: var(--color-dark-greyish-blue);
+    --color-text-2: var(--color-very-dark-blue);
+}
